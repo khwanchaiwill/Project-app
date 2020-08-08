@@ -51,9 +51,9 @@ return (
                 action.map(act => (
                     <div key={act.id} >
                         
-                        <p> Action Numbur: {act.id} </p>
-                        <p> Action Description: {act.description} </p>
-                        <p> Action Notes:{act.notes} </p>
+                        <p><span className="span-topic" >Action Numbur:</span>  {act.id} </p>
+                        <p><span className="span-topic" >Action Description:</span>  {act.description} </p>
+                        <p><span className="span-topic" >Action Notes:</span> {act.notes} </p>
                     </div>
                     )
                 )
