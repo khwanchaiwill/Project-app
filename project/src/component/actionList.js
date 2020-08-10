@@ -6,7 +6,7 @@ function ActionList (){
 
     const getActionList = () => {
     axios
-      .get("http://localhost:4500/api/actions")
+      .get("https://sprint-api.herokuapp.com/api/actions")
       .then(res => {
         console.log(res)
         setAction(res.data)

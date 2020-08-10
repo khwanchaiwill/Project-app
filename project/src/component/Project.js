@@ -13,7 +13,7 @@ function Project (){
 
     const getProjectById = (id) => {
         axios
-        .get(`http://localhost:4500/api/project/${params.id}`)
+        .get(`https://sprint-api.herokuapp.com/api/project/${params.id}`)
         .then(res => {
           console.log(res)
            setProjectById(res.data)
@@ -24,7 +24,7 @@ function Project (){
     
     const getprojectAction = () => {
         axios
-            .get(`http://localhost:4500/api/project/${params.id}/actions`)
+            .get(`https://sprint-api.herokuapp.com/api/project/${params.id}/actions`)
             .then(res => {
             console.log(res)
             setAction(res.data)

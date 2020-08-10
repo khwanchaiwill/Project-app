@@ -20,7 +20,7 @@ function ProjectForm(){
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post("http://localhost:4500/api/project", project)
+        axios.post("https://sprint-api.herokuapp.com/api/project", project)
             .then( res => {
                 console.log(res.data)
                 setProject(res.data)

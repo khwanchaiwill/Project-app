@@ -22,7 +22,7 @@ function ActionForm(){
 
     const handleSubmit = e => {
         e.preventDefault();
-        axios.post(`http://localhost:4500/api/actions/${params.id}`, actionValue)
+        axios.post(`https://sprint-api.herokuapp.com/api/actions/${params.id}`, actionValue)
             .then( res => {
                 console.log(res.data)
                 setActionValue(res.data)

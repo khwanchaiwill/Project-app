@@ -14,7 +14,7 @@ function App() {
 
   const getprojectList = () => {
     axios
-      .get("http://localhost:4500/api/project")
+      .get("https://sprint-api.herokuapp.com/api/project")
       .then(res => {
         console.log(res)
          setProjectList(res.data)
